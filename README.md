@@ -1,7 +1,6 @@
-⚡ PRIMERO — Neon Web Experience
-[Looks like the result wasn't safe to show. Let's switch things up and try something else!]
+⚡ PRIMERO — Neon Web Experience - Final Project for FES - Module 3 "Build and Apply"
 
-Welcome to PRIMERO, a glowing, high‑contrast, neon‑styled website built from scratch using pure HTML and CSS. This project showcases bold UI design, animated effects, and a futuristic aesthetic.
+Welcome to PRIMERO, a Project-styled experience with a glowing, high‑contrast, neon‑styled website built from scratch using pure HTML and CSS. This project showcases bold UI design, animated effects, and a futuristic aesthetic with the purpose of implementing the skills I have learned thus far as a rookie developer.
 
 🔥 Live Site
 https://butlervincole-hash.github.io/PRIMEROWEBSITE/
