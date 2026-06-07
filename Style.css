@@ -90,7 +90,6 @@ header {
   animation: neonFlicker 1.8s ease-in-out infinite;
 }
 
-
 /* PURPLE UNDERLINE */
 .nav-title::after {
   content: '';
@@ -414,7 +413,6 @@ header {
   border: 2px solid var(--neon-green);
 }
 
-
 /* ============================
    ANIMATIONS
 ============================ */
@@ -534,7 +532,6 @@ header {
 }
 
 
-
 /* SUBTEXT */
 .services-subtext {
   color: #e0e0e0;
@@ -611,7 +608,6 @@ header {
   transition: 0.3s ease;
 }
 
-
 .icon-box img {
   transition: 0.3s ease;
 }
@@ -625,7 +621,6 @@ header {
   transform: scale(1.12) rotate(1deg);
   filter: drop-shadow(0 0 14px #b026ff) brightness(1.35);
 }
-
 
 /* ============================
    FOOTER
@@ -1123,7 +1118,6 @@ nav h3,
     width: 300px;
   }
 }
-
 
 /* ============================
    PRICING SECTION
@@ -1719,7 +1713,6 @@ nav h3,
   transform: scale(1.05);
 }
 
-
 /* Black button with neon flicker */
 .black-btn {
   background: #000;
@@ -1764,7 +1757,6 @@ nav h3,
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
 
 /* ============================
    MAIN FOOTER
@@ -1815,7 +1807,6 @@ footer span {
 footer.footer-main {
   animation: footerPulse 6s infinite ease-in-out;
 }
-
 
 /* ============================
    GLOWING FOOTER BORDER
@@ -1938,7 +1929,6 @@ footer.footer-main {
   animation: logoFlicker 4s infinite ease-in-out;
 }
 
-
 /* ============================
    SOCIAL ICONS
 ============================ */
@@ -1960,7 +1950,6 @@ footer.footer-main {
   filter: drop-shadow(0 0 14px #39ff14);
   transform: scale(1.1);
 }
-
 
 /* ============================
    FOOTER BUTTON FLICKER ANIMATION
@@ -2058,4 +2047,3 @@ footer.footer-main {
     font-size: 0.9rem;
   }
 }
-
