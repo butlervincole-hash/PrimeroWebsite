@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Still Weird Magnolias</title>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -15,26 +15,21 @@
 
 <body>
 
-  <!-- ============================
+<!-- ============================
      HEADER + NAVIGATION
 ============================ -->
 <header>
   <nav class="nav">
-    
-    <!-- LEFT SIDE: LOGO + TITLE -->
+
     <div class="nav-left">
       <img src="Assets/MagLogo.png" alt="Still Weird Magnolias Logo" class="small-logo">
       <h3 class="nav-title">Still Weird Magnolias</h3>
     </div>
 
-    <!-- HAMBURGER -->
     <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
 
-    <!-- DROPDOWN MENU -->
     <ul class="nav-menu">
       <li><a href="#about">About</a></li>
       <li><a href="#blog">Blog</a></li>
@@ -47,32 +42,34 @@
   </nav>
 </header>
 
-  <main>
+<main>
 
-    <!-- ============================
-         HERO SECTION
-    ============================= -->
-    <section id="hero" class="hero-section">
-      <div class="hero-col hero-left">
-        <img src="Assets/MagLogo.png" class="hero-logo" alt="MagLogo">
-      </div>
+<!-- ============================
+     HERO SECTION
+============================ -->
+<section id="hero" class="hero-section">
 
-      <div class="hero-col hero-center">
-        <h1>Beautiful React Templates <span class="accent">for you.</span></h1>
-        <p>Our templates are easy to set up, understand, and customize. Fully modular components with a variety of pages and features.</p>
+  <div class="hero-col hero-left">
+    <img src="Assets/MagLogo.png" class="hero-logo" alt="MagLogo">
+  </div>
 
-        <div class="hero-input-row">
-          <input type="email" placeholder="Enter your email" class="hero-email" />
-          <a href="#pricing" class="neon-btn flicker-btn">Get Started</a>
-        </div>
-      </div>
+  <div class="hero-col hero-center">
+    <h1>Beautiful React Templates <span class="accent">for you.</span></h1>
+    <p>Our templates are easy to set up, understand, and customize. Fully modular components with a variety of pages and features.</p>
 
-      <div class="hero-col hero-right">
-       <img src="Assets/winterdesigner.png" class="hero-side-image" alt="Desk Lady">
-      </div>
-    </section>
+    <div class="hero-input-row">
+      <input type="email" placeholder="Enter your email" class="hero-email" />
+      <a href="#pricing" class="neon-btn flicker-btn">Get Started</a>
+    </div>
+  </div>
 
-   <!-- ============================
+  <div class="hero-col hero-right">
+    <img src="Assets/winterdesigner.png" class="hero-side-image" alt="Desk Lady">
+  </div>
+
+</section>
+
+<!-- ============================
      CUSTOMERS
 ============================ -->
 <section id="customers" class="section customers-section">
@@ -80,26 +77,24 @@
   <h2 class="section-title">
     Our Trusted <span class="purple-word">Customers</span>
   </h2>
-<div class="customer-logos">
-  <img src="Assets/tcplogoneon.png" alt="TCP Logo" class="customer-logo">
-  <img src="Assets/logobbq1.png" alt="BBQ logo" class="customer-logo">
-  <img src="Assets/lastcallchurch.png" alt="Last Call Church Logo" class="customer-logo">
-</div>
+
+  <div class="customer-logos">
+    <img src="Assets/tcplogoneon.png" alt="TCP Logo" class="customer-logo">
+    <img src="Assets/logobbq1.png" alt="BBQ logo" class="customer-logo">
+    <img src="Assets/lastcallchurch.png" alt="Last Call Church Logo" class="customer-logo">
+  </div>
+
 </section>
 
 <!-- ============================
      FEATURES
-============================= -->
+============================ -->
 <section id="features" class="section">
+
   <h3 class="features-label">Features</h3>
-
-  <h2 class="services-title">
-    We Have Amazing <span class="services-purple">Services</span>
-  </h2>
-
+  <h2 class="services-title">We Have Amazing <span class="services-purple">Services</span></h2>
   <p class="services-subtext">Unique, timely, efficient, & user-friendly.</p>
 
-  <!-- GRID OF 6 ICONS -->
   <div class="features-wrapper">
     <div class="neon-icons">
 
@@ -141,13 +136,16 @@
 
     </div>
   </div>
+
 </section>
 
-    <!-- ============================
+<!-- ============================
      QUALITY WORK
-============================= -->
+============================ -->
 <section id="quality" class="quality-section">
+
   <div class="quality-container">
+
     <div class="quality-text">
       <p class="quality-label">QUALITY WORK</p>
       <h2>Designed & Developed by <span class="purple">Professionals.</span></h2>
@@ -161,13 +159,16 @@
     <div class="quality-image">
       <img src="Assets/prouddesigner.svg" alt="Quality Work Image">
     </div>
+
   </div>
+
 </section>
 
-   <!-- ============================
+<!-- ============================
      STEPS
-============================= -->
+============================ -->
 <section id="steps" class="steps-section">
+
   <div class="steps-container">
 
     <div class="steps-image">
@@ -192,25 +193,27 @@
         <h3><span class="step-number">03</span> Run</h3>
         <p>Follow the instructions to set up and customize the template to your needs.</p>
       </div>
+
     </div>
 
   </div>
+
 </section>
+
 <!-- ============================
      VALUES
-============================= -->
+============================ -->
 <section id="values" class="values-section">
+
   <div class="values-container">
 
     <div class="values-text">
       <p class="values-label">VALUES</p>
       <h2>We Always Abide by Our <span class="purple">Principles.</span></h2>
-
-      <p class="values-subtext">
-        Tasteful Class & Seamless User Experiences.
-      </p>
+      <p class="values-subtext">Tasteful Class & Seamless User Experiences.</p>
 
       <div class="values-grid">
+
         <div class="value-card">
           <div class="value-icon green">$</div>
           <h4>Affordable</h4>
@@ -222,6 +225,7 @@
           <h4>Professionalism</h4>
           <p>We assure you that our templates are designed and created by professional designers.</p>
         </div>
+
       </div>
 
       <a href="#" class="learn-more-btn">Learn More</a>
@@ -232,10 +236,12 @@
     </div>
 
   </div>
+
 </section>
+
 <!-- ============================
      PRICING
-============================= -->
+============================ -->
 <section id="pricing" class="pricing-section">
 
   <p class="pricing-label">PRICING</p>
@@ -287,35 +293,35 @@
     </div>
 
   </div>
+
 </section>
 
-<div class="neon-divider"></div>
-
 <!-- ============================
-     Testimonials
-============================= -->
+     TESTIMONIALS
+============================ -->
 <section id="testimonials" class="testimonials-section">
+
   <div class="testimonials-container">
 
-    <!-- LEFT SIDE IMAGE -->
     <div class="testimonial-image">
       <img src="Assets/clientsloveus.png" alt="Clients Love Us">
     </div>
 
-    <!-- RIGHT SIDE TEXT -->
     <div class="testimonial-text">
-      <p class="testimonial-label">TESTIMONIALS</p>
 
+      <p class="testimonial-label">TESTIMONIALS</p>
       <h2>Our Clients <span class="purple">Love Us.</span></h2>
 
       <h3 class="testimonial-title">Amazing User Experience</h3>
       <div class="stars">★★★★★</div>
+
       <p class="testimonial-subtext">
         "Still Weird Magnolias made the process incredibly exciting, smooth, and enjoyable start to finish."
         <span class="neon-name"> - Charlotte Hale</span>
       </p>
 
       <div class="stars">★★★★★</div>
+
       <p class="testimonial-body">
         "The team at Still Weird Magnolias provided exceptional support throughout the project. Their attention to detail and commitment to quality exceeded our expectations."
         <span class="neon-name"> - Jordan Miles</span>
@@ -342,36 +348,42 @@
         <button class="nav-btn">→</button>
       </div>
 
-    </div> 
+    </div>
 
-  </div> 
+  </div>
+
 </section>
 
-    <!-- ============================
-         FAQ
-    ============================= -->
-    <section id="faq" class="section">
-      <h2>FAQ</h2>
+<!-- ============================
+     FAQ
+============================ -->
+<section id="faq" class="section">
 
-      <div class="faq">
-        <div class="faq-item">
-          <button class="faq-question">Can I use these templates commercially?</button>
-          <p class="faq-answer">Yes, you can.</p>
-        </div>
+  <h2>FAQ</h2>
 
-        <div class="faq-item">
-          <button class="faq-question">Do I need to know React?</button>
-          <p class="faq-answer">No, not required.</p>
-        </div>
-      </div>
-    </section>
+  <div class="faq">
 
-  </main>
-  
-  <!-- ============================
-     CALL TO ACTION + FOOTER
-============================= -->
+    <div class="faq-item">
+      <button class="faq-question">Can I use these templates commercially?</button>
+      <p class="faq-answer">Yes, you can.</p>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Do I need to know React?</button>
+      <p class="faq-answer">No, not required.</p>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- ============================
+     CTA FOOTER
+============================ -->
 <section id="cta-footer" class="section footer-banner">
+
   <div class="cta-content">
     <p>Developers all over the world are happily using Still Weird Magnolias.</p>
 
@@ -380,13 +392,14 @@
       <a href="#contact" class="cta-btn contact-btn">Contact Us</a>
     </div>
   </div>
+
 </section>
 
-<div class="footer-divider"></div>
-
+<!-- ============================
+     FOOTER
+============================ -->
 <footer class="footer-main">
 
-  <!-- FOOTER COLUMNS -->
   <div class="footer-columns">
 
     <div class="footer-col">
@@ -439,9 +452,8 @@
       </ul>
     </div>
 
-  </div> <!-- end footer-columns -->
+  </div>
 
-  <!-- FOOTER BOTTOM -->
   <div class="footer-bottom">
 
     <div class="footer-logo">
@@ -458,19 +470,19 @@
       <img src="Assets/instalogo.png" alt="Instagram">
     </div>
 
-  </div> <!-- end footer-bottom -->
+  </div>
 
 </footer>
 
-  <!-- ============================
-       SCRIPTS
-  ============================= -->
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-menu').classList.toggle('active');
-      document.querySelector('.hamburger').classList.toggle('open');
-    }
-  </script>
+<!-- ============================
+     SCRIPTS
+============================ -->
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+    document.querySelector('.hamburger').classList.toggle('open');
+  }
+</script>
 
 </body>
 </html>
