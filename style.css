@@ -555,13 +555,24 @@ header {
 
 /* Neon Icon Grid Layout */
 /* FEATURES GRID */
+.features-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .neon-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   justify-items: center;
   align-items: start;
-  margin-top: 3rem;
+  max-width: 1000px; /* keeps grid centered */
+  margin: 0 auto;
+}
+
+.neon-icons {
+  row-gap: 2rem;
 }
 
 /* ICON BOX */
