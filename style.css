@@ -1492,7 +1492,7 @@ nav h3,
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  flex-wrap: wrap; /* keeps it responsive */
+  flex-wrap: wrap; 
 }
 
 .testimonial-image {
