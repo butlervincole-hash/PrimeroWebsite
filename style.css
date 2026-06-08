@@ -531,7 +531,6 @@ header {
   animation: purpleFlicker 3s infinite ease-in-out;
 }
 
-
 /* SUBTEXT */
 .services-subtext {
   color: #e0e0e0;
@@ -560,7 +559,7 @@ header {
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   justify-items: center;
-  align-items: center;
+  align-items: start;
   margin-top: 3rem;
 }
 
