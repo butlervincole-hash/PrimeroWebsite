@@ -569,6 +569,11 @@ header {
   gap: 3rem;
 }
 
+.icon-box {
+  text-align: center;
+  max-width: 220px;
+}
+
 /* ICON GRID UPGRADE */
 .icon-box {
   text-align: center;
