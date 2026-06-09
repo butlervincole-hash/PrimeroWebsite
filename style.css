@@ -982,3 +982,24 @@ span.accent {
         drop-shadow(0 0 32px var(--neon-green));
 }
 
+/* VALUES SECTION — FINAL FORCED SPACING FIX */
+.values-section .learn-more-btn {
+    margin-top: 32px !important;
+    display: inline-block !important;
+}
+
+/* VALUES SECTION — FINAL FORCED IMAGE GLOW + TILT */
+.values-section .values-image img {
+    width: 450px !important;
+    height: auto !important;
+    filter: drop-shadow(0 0 6px var(--neon-green)) !important;
+    transition: transform 0.35s ease, filter 0.35s ease !important;
+}
+
+.values-section .values-image img:hover {
+    transform: scale(1.08) rotate(6deg) !important;
+    filter:
+        drop-shadow(0 0 14px var(--neon-green))
+        drop-shadow(0 0 22px var(--neon-purple))
+        drop-shadow(0 0 32px var(--neon-purple)) !important;
+}
