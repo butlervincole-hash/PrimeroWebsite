@@ -22,9 +22,15 @@
 /* ============================
    GLOBAL BASE
 ============================ */
+html {
+    font-size: 18px;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
     color: var(--gray);
     background: var(--black);
     border: 4px solid var(--neon-purple);
@@ -47,7 +53,6 @@ h1, h2, h3, h4 {
 #pricing-section h2,
 #testimonials-section h2,
 #faq-section h2 {
-    font-family: 'Orbitron', sans-serif;
     font-size: 2.4rem;
     color: #000;
     -webkit-text-stroke: 1px var(--neon-green);
@@ -69,69 +74,50 @@ h1, h2, h3, h4 {
     font-size: 1.1em;
 }
 
-
-
 /* ============================
    CRISP HEADINGS — GLOBAL
 ============================ */
-
-/* h1 — Hero Title */
 h1 {
-    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
     -webkit-text-stroke: 1px var(--neon-green);
     text-shadow: 0 0 8px var(--neon-green);
     color: #000;
 }
 
-/* h3 — Feature Titles, Step Titles, Testimonial Titles */
+h2 { font-size: 2.2rem; }
+
 h3 {
-    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
     -webkit-text-stroke: 1px var(--neon-green);
     text-shadow: 0 0 8px var(--neon-green);
     color: #000;
 }
 
-/* h4 — Pricing Cards, Footer Headings */
 h4 {
-    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
     -webkit-text-stroke: 1px var(--neon-purple);
     text-shadow: 0 0 8px var(--neon-purple);
     color: #000;
 }
 
-/* Section Labels (FEATURES, STEPS, VALUES, PRICING, TESTIMONIALS) */
+/* Section Labels */
 .features-label,
 .steps-label,
 .values-label,
 .pricing-label,
 .testimonial-label {
-    font-family: 'Orbitron', sans-serif;
     -webkit-text-stroke: 1px var(--neon-purple);
     text-shadow: 0 0 8px var(--neon-purple);
     color: var(--neon-purple);
     letter-spacing: 1px;
 }
 
-html {
-    font-size: 18px; /* base size — was likely 16px */
-}
-
-body {
-    font-size: 1rem; /* equals 18px now */
-    line-height: 1.6;
-}
-
-/* Headings */
-h1 { font-size: 2.8rem; }
-h2 { font-size: 2.2rem; }
-h3 { font-size: 1.6rem; }
-h4 { font-size: 1.3rem; }
-
-/* Paragraphs and general text */
+/* ============================
+   TEXT SIZING
+============================ */
 p, li, a, button, input, .faq-answer, .faq-question {
     font-size: 1.05rem;
 }
-
 
 /* ============================
    SCROLLBAR
@@ -179,7 +165,6 @@ header {
 }
 
 .nav-title {
-    font-family: 'Orbitron', sans-serif;
     font-size: 1.6rem;
     letter-spacing: 1px;
     color: #000;
@@ -254,9 +239,7 @@ header {
     z-index: 999;
 }
 
-.nav-menu.active {
-    display: block;
-}
+.nav-menu.active { display: block; }
 
 .nav-menu li { margin: 12px 0; }
 
@@ -305,21 +288,30 @@ header {
     transition: transform 0.4s ease, filter 0.4s ease;
 }
 
+.hero-logo:hover,
+.hero-side-image:hover {
+    transform: scale(1.08) rotate(2deg);
+    filter: drop-shadow(0 0 20px var(--neon-green));
+}
+
 .hero-center h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.8rem;
-    color: #000;
-    -webkit-text-stroke: 1px var(--neon-green);
-    text-shadow: 0 0 8px var(--neon-green), 0 0 16px var(--neon-green);
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .hero-center p {
+    margin-bottom: 26px;
     color: #e0e0e0;
     font-weight: 600;
     text-shadow: 0 0 6px rgba(176,38,255,0.6);
     max-width: 420px;
     margin: 0 auto 25px;
+}
+
+.neon,
+.accent,
+span.accent {
+    color: var(--neon-purple);
+    text-shadow: 0 0 10px var(--neon-purple), 0 0 18px var(--neon-purple);
 }
 
 /* ============================
@@ -343,20 +335,9 @@ header {
     box-shadow: 0 0 10px var(--neon-purple);
 }
 
-.get-started-btn {
-    padding: 12px 20px;
-    background-color: #000;
-    color: var(--neon-green);
-    border: 2px solid var(--neon-green);
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    box-shadow: 0 0 10px var(--neon-green);
-    transition: all 0.3s ease;
-}
-
-/* GENERIC BUTTON BASE */
+/* ============================
+   BUTTONS
+============================ */
 .get-started-btn,
 .buy-btn,
 .cta-btn,
@@ -376,7 +357,13 @@ header {
     transition: 0.3s ease;
 }
 
-.get-started-btn:hover,
+.get-started-btn:hover {
+    background: var(--neon-purple);
+    color: #000;
+    border-color: var(--neon-purple);
+    box-shadow: 0 0 16px var(--neon-purple);
+}
+
 .buy-btn:hover,
 .cta-btn:hover,
 .learn-more-btn:hover,
@@ -386,11 +373,11 @@ header {
     box-shadow: 0 0 16px var(--neon-green);
 }
 
-/* COLOR VARIANTS */
 .green-btn { border-color: var(--neon-green); }
 .purple-btn { border-color: var(--neon-purple); }
 .red-btn { border-color: #ff3366; }
 .black-btn { border-color: var(--neon-purple); }
+
 
 /* ============================
    CUSTOMERS SECTION
