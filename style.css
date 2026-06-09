@@ -623,7 +623,7 @@ span.accent {
     width: 100%;
 }
 
-.values-image img {
+.values-section .values-img {
     width: 450px;
     height: auto;
     filter: drop-shadow(0 0 6px var(--neon-green));
@@ -631,7 +631,7 @@ span.accent {
     will-change: transform, filter;
 }
 
-.values-image img:hover {
+.values-section .values-image img:hover {
     transform: scale(1.08) rotate(6deg);
     filter:
         drop-shadow(0 0 14px var(--neon-green))
@@ -643,8 +643,10 @@ span.accent {
   margin-top:28px;
 }
 
-#values-section p {
+
+#values-section .learn-more-btn p {
   margin-bottom: 28px;
+  display: inline-block;
 }
 
 /* ============================
