@@ -10,12 +10,6 @@
   --light-gray: #e0e0e0;
 }
 
-/* Global heading font match */
-h2, h3, h4 {
-  font-family: 'Black Ops One', cursive;
-  letter-spacing: 0.5px;
-}
-
 /* ============================
    GLOBAL RESET
 ============================ */
@@ -28,6 +22,12 @@ h2, h3, h4 {
 /* ============================
    GLOBAL BASE
 ============================ */
+/* Global heading font match */
+h2, h3, h4 {
+  font-family: 'Black Ops One', cursive;
+  letter-spacing: 0.5px;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
