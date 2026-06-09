@@ -532,9 +532,31 @@ span.accent {
     width: 100%;
 }
 
+/* QUALITY SECTION — SPACING FIX */
+.quality-subtext {
+    margin-bottom: 28px;
+}
+
+.quality-text {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* QUALITY SECTION — IMAGE HOVER GLOW + TILT */
 .quality-image img {
     width: 450px;
-    filter: drop-shadow(0 0 12px var(--neon-green));
+    height: auto;
+    filter: drop-shadow(0 0 6px var(--neon-green));
+    transition: transform 0.35s ease, filter 0.35s ease;
+    will-change: transform, filter;
+}
+
+.quality-image img:hover {
+    transform: scale(1.08) rotate(6deg);
+    filter:
+        drop-shadow(0 0 14px var(--neon-green))
+        drop-shadow(0 0 22px var(--neon-purple))
+        drop-shadow(0 0 32px var(--neon-purple));
 }
 
 /* ============================
