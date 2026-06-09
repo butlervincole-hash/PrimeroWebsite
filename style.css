@@ -36,17 +36,78 @@ h1, h2, h3, h4 {
     letter-spacing: 0.5px;
 }
 
+/* ============================
+   CRISP HEADINGS — H2 + PURPLE SPANS
+============================ */
+.section h2,
+#features-section h2,
+#quality-section h2,
+#steps-section h2,
+#values-section h2,
+#pricing-section h2,
+#testimonials-section h2,
+#faq-section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.4rem;
+    color: #000;
+    -webkit-text-stroke: 1px var(--neon-green);
+    text-shadow: 0 0 8px var(--neon-green);
+    margin-bottom: 20px;
+}
+
 .section h2 span,
 #features-section h2 span,
 #quality-section h2 span,
 #steps-section h2 span,
 #values-section h2 span,
 #pricing-section h2 span,
-#testimonials-section h2 span {
+#testimonials-section h2 span,
+#faq-section h2 span {
     color: var(--neon-purple);
     -webkit-text-stroke: 1px var(--neon-purple);
-    text-shadow: 0 0 8px var(--neon-purple), 0 0 14px var(--neon-purple);
+    text-shadow: 0 0 8px var(--neon-purple);
     font-size: 1.1em;
+}
+
+/* ============================
+   CRISP HEADINGS — GLOBAL
+============================ */
+
+/* h1 — Hero Title */
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    -webkit-text-stroke: 1px var(--neon-green);
+    text-shadow: 0 0 8px var(--neon-green);
+    color: #000;
+}
+
+/* h3 — Feature Titles, Step Titles, Testimonial Titles */
+h3 {
+    font-family: 'Orbitron', sans-serif;
+    -webkit-text-stroke: 1px var(--neon-green);
+    text-shadow: 0 0 8px var(--neon-green);
+    color: #000;
+}
+
+/* h4 — Pricing Cards, Footer Headings */
+h4 {
+    font-family: 'Orbitron', sans-serif;
+    -webkit-text-stroke: 1px var(--neon-purple);
+    text-shadow: 0 0 8px var(--neon-purple);
+    color: #000;
+}
+
+/* Section Labels (FEATURES, STEPS, VALUES, PRICING, TESTIMONIALS) */
+.features-label,
+.steps-label,
+.values-label,
+.pricing-label,
+.testimonial-label {
+    font-family: 'Orbitron', sans-serif;
+    -webkit-text-stroke: 1px var(--neon-purple);
+    text-shadow: 0 0 8px var(--neon-purple);
+    color: var(--neon-purple);
+    letter-spacing: 1px;
 }
 
 /* ============================
@@ -488,11 +549,15 @@ header {
     margin: 0 auto;
 }
 
+/* Match testimonial image size to other section illustrations */
 .testimonial-image img {
     width: 100%;
-    max-width: 450px;
+    max-width: 450px;   /* same as quality, steps, values images */
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 20px var(--neon-green);
+    display: block;
+    margin: 0 auto;     /* centers it on mobile */
 }
 
 /* ============================
