@@ -294,8 +294,36 @@ header {
     filter: drop-shadow(0 0 14px var(--neon-green));
 }
 
+/* FORCE hero images to match nav-bar hover behavior */
+.hero-logo,
+.hero-side-image {
+    width: 420px;
+    height: auto;
+    filter: drop-shadow(0 0 6px var(--neon-green));
+    transition: transform 0.35s ease, filter 0.35s ease;
+    will-change: transform, filter;
+}
+
+/* Left image tilt (same as nav logo) */
+.hero-logo:hover {
+    transform: scale(1.1) rotate(8deg);
+    filter:
+        drop-shadow(0 0 14px var(--neon-green))
+        drop-shadow(0 0 18px var(--neon-purple));
+}
+
+/* Right image tilt (mirrored) */
+.hero-side-image:hover {
+    transform: scale(1.1) rotate(-8deg);
+    filter:
+        drop-shadow(0 0 14px var(--neon-green))
+        drop-shadow(0 0 18px var(--neon-purple));
+}
+
+
+/* Make "Beautiful React..." flicker like nav title */
 .hero-center h1 {
-    margin-bottom: 18px;
+    animation: neonFlicker 1.8s ease-in-out infinite;
 }
 
 .hero-center p {
@@ -803,8 +831,9 @@ span.accent {
    ANIMATIONS
 ============================ */
 @keyframes neonFlicker {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.85; }
+    0%, 100% { opacity: 1; text-shadow: 0 0 8px var(--neon-green); }
+    50% { opacity: 0.85; text-shadow: 0 0 14px var(--neon-green); }
+    70% { opacity: 0.95; text-shadow: 0 0 20px var(--neon-green); }
 }
 
 @keyframes underlineGlow {
