@@ -1314,9 +1314,11 @@ body, h1, h2, h3, h4, h5, h6, p, a, span {
 
 /* Apply the animation */
 .footer-social img {
-  width: 36px;
-  height: 36px;
-  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background-color: #000;
   border-radius: 6px;
   animation: neonGlowShift 4s ease-in-out infinite;
   transition: transform 0.3s ease;
