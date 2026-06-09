@@ -1231,9 +1231,11 @@ body, h1, h2, h3, h4, h5, h6, p, a, span {
 }
 
 .footer-social img {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
   border-radius: 6px;
+  align-items: center;
   filter: drop-shadow(0 0 6px var(--neon-purple));
   transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -1260,6 +1262,69 @@ body, h1, h2, h3, h4, h5, h6, p, a, span {
   .footer-social {
     justify-content: center;
   }
+}
+
+/* Neon pulse animation for social icons */
+@keyframes neonGlowShift {
+  0% {
+    filter: drop-shadow(0 0 6px var(--neon-green));
+  }
+  33% {
+    filter: drop-shadow(0 0 8px var(--neon-purple));
+  }
+  66% {
+    filter: drop-shadow(0 0 8px hotpink);
+  }
+  100% {
+    filter: drop-shadow(0 0 6px var(--neon-green));
+  }
+}
+
+.footer-social img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 6px;
+  animation: neonGlowShift 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+/* Stagger the glow timing */
+.footer-social img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.footer-social img:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.footer-social img:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.footer-social img:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+/* Hover still overrides the glow */
+.footer-social img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 12px var(--neon-green));
+}
+
+/* Apply the animation */
+.footer-social img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  border-radius: 6px;
+  animation: neonGlowShift 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 12px var(--neon-green));
 }
 
 @media (max-width: 600px) {
