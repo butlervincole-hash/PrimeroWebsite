@@ -10,6 +10,12 @@
   --light-gray: #e0e0e0;
 }
 
+/* Global heading font match */
+h2, h3, h4 {
+  font-family: 'Black Ops One', cursive;
+  letter-spacing: 0.5px;
+}
+
 /* ============================
    GLOBAL RESET
 ============================ */
@@ -280,6 +286,14 @@ header {
   box-shadow: 0 0 25px #39ff14;
 }
 
+#get-started h2 {
+  -webkit-text-stroke: 1px var(--neon-green);
+}
+#get-started h2 span {
+  color: var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
+}
+
 /* ============================
    HERO RESPONSIVE
 ============================ */
@@ -314,6 +328,20 @@ header {
   filter: drop-shadow(0 0 6px #39ff14);
   transition: 0.3s ease;
 }
+
+#customers h2 {
+  -webkit-text-stroke: 1px var(--neon-green);
+  text-shadow: 0 0 8px var(--neon-green);
+}
+
+#testimonials h2 {
+  -webkit-text-stroke: 1px var(--neon-green);
+}
+#testimonials h2 span {
+  color: var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
+}
+
 
 .customer-logo:hover {
   opacity: 1;
@@ -379,6 +407,11 @@ header {
   font-weight: 600;
   margin-bottom: 40px;
   text-shadow: 0 0 6px rgba(176,38,255,0.6);
+}
+
+#features h2 {
+  -webkit-text-stroke: 1px var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
 }
 
 /* Icon Grid */
@@ -480,6 +513,15 @@ header {
 
 #quality h2 .purple {
   -webkit-text-stroke: 1px var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
+}
+
+#quality h2 {
+  -webkit-text-stroke: 1px var(--neon-green);
+}
+
+#quality h2 span {
+  color: var(--neon-purple);
   text-shadow: 0 0 8px var(--neon-purple);
 }
 
@@ -623,6 +665,14 @@ header {
     text-align: center;
   }
   .steps-image img { width: 300px; }
+}
+
+#principles h2 {
+  -webkit-text-stroke: 1px var(--neon-green);
+}
+#principles h2 span {
+  color: var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
 }
 
 /* ============================
@@ -784,6 +834,15 @@ header {
   line-height: 1.6;
   margin-bottom: 40px;
 }
+
+#pricing h2 {
+  -webkit-text-stroke: 1px var(--neon-green);
+}
+#pricing h2 span {
+  color: var(--neon-purple);
+  text-shadow: 0 0 8px var(--neon-purple);
+}
+
 
 .pricing-grid {
   display: flex;
