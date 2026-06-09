@@ -245,14 +245,13 @@ header {
 .hero-input-row {
   display: flex;
   justify-content: center;
+  align-items: stretch; /* keeps both elements equal height */
   gap: 12px;
-  align-items: stretch;
 }
 
-/* Unified email input */
 .email-input {
+  flex: 1; /* allows input to expand evenly */
   padding: 12px 16px;
-  width: 240px;
   border-radius: 6px;
   border: 2px solid var(--neon-purple);
   background: #000;
@@ -261,33 +260,12 @@ header {
   box-shadow: 0 0 10px var(--neon-purple);
 }
 
-.email-input::placeholder {
-  color: var(--neon-purple);
-  text-shadow: 0 0 6px var(--neon-purple);
-  animation: placeholderPulse 2s ease-in-out infinite;
-}
-
-/* ============================
-   GET STARTED BUTTON
-============================ */
-@keyframes neonFlicker {
-  0%, 100% {
-    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
-  }
-  50% {
-    box-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14;
-  }
-  70% {
-    box-shadow: 0 0 15px #39ff14, 0 0 30px #39ff14;
-  }
-}
-
 .get-started-btn {
+  padding: 12px 20px; /* match input height */
   background-color: #000;
   color: #39ff14;
   border: 2px solid #39ff14;
   border-radius: 6px;
-  padding: 12px 20px;
   cursor: pointer;
   font-weight: bold;
   text-transform: uppercase;
