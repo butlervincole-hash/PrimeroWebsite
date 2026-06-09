@@ -926,3 +926,21 @@ span.accent {
         drop-shadow(0 0 14px var(--neon-green))
         drop-shadow(0 0 18px var(--neon-purple));
 }
+
+/* UNIVERSAL FIX — ANY IMAGE INSIDE STEPS SECTION GLOWS GREEN */
+#steps-section img {
+    width: 450px;
+    height: auto;
+    filter: drop-shadow(0 0 6px var(--neon-green));
+    transition: transform 0.35s ease, filter 0.35s ease;
+    will-change: transform, filter;
+}
+
+#steps-section img:hover {
+    transform: scale(1.08) rotate(6deg);
+    filter:
+        drop-shadow(0 0 14px var(--neon-green))
+        drop-shadow(0 0 22px var(--neon-green))
+        drop-shadow(0 0 32px var(--neon-green));
+}
+
