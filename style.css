@@ -774,9 +774,17 @@ span.accent {
 }
 
 /* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
+/* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
+.testimonial-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .testimonial-image img {
-    width: 0%;
-    max-width: 40px;
+    width: 100%;
+    max-width: 300px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
@@ -791,6 +799,7 @@ span.accent {
         drop-shadow(0 0 22px var(--neon-green))
         drop-shadow(0 0 32px var(--neon-green));
 }
+
 
 .testimonial-text {
     flex: 1;
