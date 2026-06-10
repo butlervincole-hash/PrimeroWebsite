@@ -784,7 +784,7 @@ span.accent {
 
 .testimonial-image img {
     width: 100%;
-    max-width: 300px; 
+    max-width: 450px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
@@ -807,8 +807,8 @@ span.accent {
 }
 
 .author-img {
-  width: 18px;
-  height:18px;
+  width: 45px;
+  height:45px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--neon-green);
