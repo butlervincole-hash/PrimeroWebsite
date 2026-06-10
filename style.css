@@ -570,7 +570,7 @@ span.accent {
 
 /* STEPS IMAGE — GLOW + TILT */
 .steps-section .steps-image img {
-    width: 450px;
+    width: 275px;
     height: auto;
     filter: drop-shadow(0 0 6px var(--neon-green));
     transition: transform 0.35s ease, filter 0.35s ease;
