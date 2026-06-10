@@ -608,18 +608,18 @@ span.accent {
 }
 
 /* Spacing before Learn More button */
-.values-section .learn-more-btn {
-    margin-top: 32px;
-    display: inline-block;
+.values-text {
+  max-width: 520px;
+  margin: 0 auto;
 }
 
-.values-section .values-grid {
+.values-section-subtext {
   margin-bottom:28px;
 }
 
 /* VALUES IMAGE — GLOW + TILT */
-.values-section .values-image img {
-    width: 360px;
+.values-image img {
+    width: 450px;
     height: auto;
     filter: drop-shadow(0 0 6px var(--neon-green));
     transition: transform 0.35s ease, filter 0.35s ease;
