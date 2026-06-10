@@ -821,8 +821,8 @@ span.accent {
 
 /* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
 .testimonial-image img {
-    width: 75%;
-    max-width: 280px; /* FIXED — now valid and sized correctly */
+    width: 100%;
+    max-width: 350px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
@@ -880,7 +880,7 @@ span.accent {
 
 .testimonial-row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
     margin: 25px 0;
 }
@@ -891,7 +891,8 @@ span.accent {
 }
 
 .testimonial-quote .testimonial-subtext {
-    margin: 0;
+  flex:1;
+  margin: 0;
 }
 
 .testimonial-quote .neon-name {
