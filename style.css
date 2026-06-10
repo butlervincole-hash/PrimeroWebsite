@@ -797,45 +797,19 @@ span.accent {
     justify-content: center;
     align-items: flex-start;
     gap: 80px;
-    max-width: 1200px; /* matches other sections for balance */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 40px 0;
 }
 
-/* Left illustration container */
+/* LEFT SIDE — stacked illustrations */
 .testimonial-image {
     flex: 1;
     display: flex;
+    flex-direction: column; /* stack vertically */
     justify-content: center;
     align-items: center;
-}
-
-/* Right text column */
-.testimonial-text {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    text-align: left;
-}
-
-/* Illustration — tilt + neon glow */
-.testimonial-image img {
-    width: 100%;
-    max-width: 420px; /* slightly smaller for better proportion */
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px var(--neon-green);
-    transition: transform 0.35s ease, filter 0.35s ease;
-}
-
-.testimonial-image {
-    flex: 1;
-    display: flex;
-    flex-direction: column; /* stack images vertically */
-    justify-content: center;
-    align-items: center;
-    gap: 30px; /* space between the two images */
+    gap: 30px; /* space between images */
 }
 
 .testimonial-image img {
@@ -861,7 +835,16 @@ span.accent {
         drop-shadow(0 0 32px var(--neon-green));
 }
 
-/* Author photo styling */
+/* RIGHT SIDE — text column */
+.testimonial-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+}
+
+/* AUTHOR PHOTO */
 .author-img {
     width: 90px;
     height: 90px;
@@ -878,7 +861,7 @@ span.accent {
     box-shadow: 0 0 18px var(--neon-purple), 0 0 28px var(--neon-green);
 }
 
-/* Neon divider between sections */
+/* NEON DIVIDER */
 .neon-divider {
     width: 85%;
     height: 4px;
@@ -890,7 +873,7 @@ span.accent {
     box-shadow: 0 0 12px var(--neon-green), 0 0 12px var(--neon-purple);
 }
 
-/* Divider pulse animation */
+/* NEON PULSE ANIMATION */
 @keyframes neonPulse {
     0%, 100% {
         box-shadow: 0 0 8px var(--neon-green), 0 0 8px var(--neon-purple);
@@ -900,14 +883,52 @@ span.accent {
     }
 }
 
-/* Testimonial rows — photo + quote side by side */
-.testimonial-row {
+/* TESTIMONIAL CARD — photo + quote side by side */
+.testimonial-card {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 25px;
+    padding: 25px;
     margin: 25px 0;
+    border: 2px solid var(--neon-purple);
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow:
+        0 0 12px var(--neon-purple),
+        0 0 20px var(--neon-green),
+        inset 0 0 12px var(--neon-purple);
+    transition: 0.3s ease;
 }
 
+.testimonial-card:hover {
+    box-shadow:
+        0 0 18px var(--neon-purple),
+        0 0 28px var(--neon-green),
+        inset 0 0 18px var(--neon-purple);
+    transform: translateY(-4px);
+}
+
+/* TESTIMONIAL CONTENT */
+.testimonial-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.testimonial-subtext {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* NEON NAME */
+.neon-name {
+    font-weight: bold;
+    color: var(--neon-purple);
+    text-shadow: 0 0 12px var(--neon-purple), 0 0 20px var(--neon-green);
+}
+
+/* SCROLL FADE-IN EFFECT */
 .testimonial-row {
     opacity: 0;
     transform: translateY(20px);
@@ -918,93 +939,6 @@ span.accent {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* Quote block beside photo */
-.testimonial-quote {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Quote text */
-.testimonial-quote .testimonial-subtext {
-    margin: 0;
-    line-height: 1.6;
-}
-
-/* Neon name styling */
-.testimonial-quote .neon-name {
-    margin-top: 6px;
-    font-weight: bold;
-    color: var(--neon-purple);
-    text-shadow: 0 0 12px var(--neon-purple), 0 0 20px var(--neon-green);
-}
-
-/* Neon testimonial card */
-.testimonial-card {
-    padding: 25px;
-    border: 2px solid var(--neon-purple);
-    border-radius: 12px;
-    background: rgba(0, 0, 0, 0.4);
-    box-shadow:
-        0 0 12px var(--neon-purple),
-        0 0 20px var(--neon-green),
-        inset 0 0 12px var(--neon-purple);
-    transition: 0.3s ease;
-}
-/* Hover glow boost */
-.testimonial-card:hover {
-    box-shadow:
-        0 0 18px var(--neon-purple),
-        0 0 28px var(--neon-green),
-        inset 0 0 18px var(--neon-purple);
-    transform: translateY(-4px);
-}
-
-/* Neon testimonial cards */
-.testimonial-card {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  padding: 25px;
-  margin: 25px 0;
-  border: 2px solid var(--neon-purple);
-  border-radius: 12px;
-  background: rgba(0, 0, 0, 0.4);
-  box-shadow:
-    0 0 12px var(--neon-purple),
-    0 0 20px var(--neon-green),
-    inset 0 0 12px var(--neon-purple);
-  transition: 0.3s ease;
-}
-
-.testimonial-card:hover {
-  box-shadow:
-    0 0 18px var(--neon-purple),
-    0 0 28px var(--neon-green),
-    inset 0 0 18px var(--neon-purple);
-  transform: translateY(-4px);
-}
-
-/* Text beside photo */
-.testimonial-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.testimonial-subtext {
-  margin: 0;
-  line-height: 1.6;
-}
-
-.neon-name {
-  font-weight: bold;
-  color: var(--neon-purple);
-  text-shadow: 0 0 12px var(--neon-purple), 0 0 20px var(--neon-green);
-}
-
 
 /* ============================
    FAQ SECTION
