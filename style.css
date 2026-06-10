@@ -812,14 +812,14 @@ span.accent {
 
 .testimonial-text {
     flex:1;
-    max-width: 500px;
+    max-width: 420px;
     text-align: left;
 }
 
 /* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
 .testimonial-image img {
     width: 100%;
-    max-width: 300;
+    max-width: 230;
     height:auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
@@ -840,8 +840,8 @@ span.accent {
 }
 
 .author-img {
-  width: 140px;
-  height:140px;
+  width: 65px;
+  height:65px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--neon-green);
