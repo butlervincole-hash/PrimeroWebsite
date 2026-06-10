@@ -763,24 +763,6 @@ span.accent {
 /* ============================
    TESTIMONIALS SECTION
 ============================ */
-.testimonials-section {
-    padding: 80px 40px;
-    background: #000;
-    border-top: 2px solid var(--neon-green);
-    border-bottom: 2px solid var(--neon-purple);
-    box-shadow: 0 0 20px var(--neon-green), 0 0 20px var(--neon-purple) inset;
-}
-
-.testimonial-divider {
-    width: 80%;
-    height: 3px;
-    margin: 20px 0;
-    border-radius: 2px;
-    background: linear-gradient(90deg, var(--neon-purple), var(--neon-green));
-    background-size: 250% 100%;
-    animation: neonWave 4s linear infinite;
-}
-
 .testimonials-container {
     display: flex;
     justify-content: center;
@@ -792,38 +774,15 @@ span.accent {
 }
 
 .testimonial-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonial-text {
     flex: 1;
     max-width: 500px;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 10px;
-}
-
-
-.testimonial-subtext {
-    margin: 12px 0 18px;
-}
-
-/* Testimonial image — match other illustrations */
-.testimonial-image img {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 20px var(--neon-green);
-    display: block;
-    margin: 0 auto;
 }
 
 /* ============================
