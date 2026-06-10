@@ -648,6 +648,8 @@ span.accent {
 .pricing-section {
     text-align: center;
     padding: 80px 40px;
+    background: #000;
+    overflow: hidden;
 }
 
 .pricing-subtext {
@@ -662,6 +664,17 @@ span.accent {
     flex-wrap: wrap;
 }
 
+/* PRICING GRID — restore horizontal layout */
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .pricing-card {
     background: rgba(0,0,0,0.6);
     border: 2px solid var(--neon-purple);
@@ -670,6 +683,7 @@ span.accent {
     padding: 30px 25px;
     text-align: center;
     width: 280px;
+    min-height: 520px;
     transition: 0.3s ease;
 
   .pricing-card {
@@ -677,6 +691,12 @@ span.accent {
     flex-direction: column;
     justify-content: space-between;
     height: 100%; /* FIXED semicolon */
+}
+
+.pricing-card {
+    flex: 1 1 300px;
+    min-width: 280px;
+    max-width: 320px;
 }
 
 .pricing-card .buy-btn {
