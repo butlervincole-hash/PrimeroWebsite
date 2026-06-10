@@ -683,6 +683,78 @@ span.accent {
     margin-top: 20px;
 }
 
+/* ============================
+   PRICING — CYBERPUNK LIST STYLE
+============================ */
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.pricing-card li {
+    color: #ff00cc; /* neon pink */
+    font-weight: 600;
+    text-shadow: 0 0 6px #ff00cc, 0 0 12px #ff00cc;
+    margin-bottom: 18px;
+    position: relative;
+    padding-bottom: 12px;
+    opacity: 0;
+    animation: cyberStagger 0.6s ease forwards;
+}
+
+/* Stagger timing for each item */
+.pricing-card li:nth-child(1) { animation-delay: 0.1s; }
+.pricing-card li:nth-child(2) { animation-delay: 0.2s; }
+.pricing-card li:nth-child(3) { animation-delay: 0.3s; }
+.pricing-card li:nth-child(4) { animation-delay: 0.4s; }
+
+/* Glowing cyberpunk divider */
+.pricing-card li::after {
+    content: '';
+    display: block;
+    width: 70%;
+    height: 2px;
+    margin: 10px auto 0;
+    background: linear-gradient(90deg, var(--neon-purple), var(--neon-green));
+    box-shadow: 0 0 8px var(--neon-purple), 0 0 12px var(--neon-green);
+    border-radius: 2px;
+    animation: pulseDivider 2.2s ease-in-out infinite;
+}
+
+/* Hover glow effect */
+.pricing-card li:hover {
+    transform: translateX(4px);
+    text-shadow: 0 0 10px #ff00cc, 0 0 18px #ff00cc;
+}
+
+/* ============================
+   ANIMATIONS
+============================ */
+
+/* Soft fade upward */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(12px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Staggered cyberpunk item reveal */
+@keyframes cyberStagger {
+    0% { opacity: 0; transform: translateX(-10px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Divider glow pulse */
+@keyframes pulseDivider {
+    0%, 100% {
+        box-shadow: 0 0 6px var(--neon-purple), 0 0 10px var(--neon-green);
+    }
+    50% {
+        box-shadow: 0 0 14px var(--neon-green), 0 0 20px var(--neon-purple);
+    }
+}
+
 /
 /* ============================
    TESTIMONIALS SECTION
