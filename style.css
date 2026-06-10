@@ -793,25 +793,28 @@ span.accent {
 /* ============================
    TESTIMONIALS SECTION
 ============================ */
+/* ============================
+   TESTIMONIALS SECTION
+============================ */
 .testimonials-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 80px;
-    max-width: 900px;
+    max-width: 1200px; /* increased for better layout */
     margin: 0 auto;
     padding: 40px 0;
 }
 
 .testimonial-image {
-  flex:1;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonial-text {
-    flex:1;
+    flex: 1;
     max-width: 500px;
     text-align: left;
 }
@@ -819,8 +822,8 @@ span.accent {
 /* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
 .testimonial-image img {
     width: 75%;
-    max-width: 100;
-    height:auto;
+    max-width: 280px; /* FIXED — now valid and sized correctly */
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
     transition: transform 0.35s ease, filter 0.35s ease;
@@ -840,16 +843,16 @@ span.accent {
 }
 
 .author-img {
-  width: 90px;
-  height:90px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 2px solid var(--neon-green);
-  background: #000;
-  padding: 3px;
- }
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--neon-green);
+    background: #000;
+    padding: 3px;
+}
 
- .author-img:hover {
+.author-img:hover {
     transform: scale(1.08);
     box-shadow: 0 0 18px var(--neon-purple), 0 0 28px var(--neon-green);
     transition: 0.3s ease;
