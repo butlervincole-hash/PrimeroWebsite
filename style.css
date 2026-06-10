@@ -814,7 +814,7 @@ span.accent {
 
 .testimonial-image img:first child {
     width: 100%;
-    max-width: 420px;
+    max-width: 220px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
