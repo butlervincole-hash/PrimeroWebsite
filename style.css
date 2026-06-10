@@ -811,7 +811,7 @@ span.accent {
 }
 
 .testimonial-text {
-    flex:2;
+    flex:1;
     max-width: 500px;
     text-align: left;
 }
