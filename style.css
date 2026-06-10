@@ -797,8 +797,8 @@ span.accent {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 60px;
-    max-width: 1200px;
+    gap: 80px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 40px 0;
 }
@@ -811,15 +811,15 @@ span.accent {
 }
 
 .testimonial-text {
-    flex:1;
-    max-width: 420px;
+    flex:2;
+    max-width: 500px;
     text-align: left;
 }
 
 /* TESTIMONIAL IMAGE — TILT + NEON GREEN GLOW */
 .testimonial-image img {
-    width: 100%;
-    max-width: 230;
+    width: 75%;
+    max-width: 200;
     height:auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
@@ -835,13 +835,13 @@ span.accent {
 }
 
 .testimonial-author {
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 30px;
 }
 
 .author-img {
-  width: 65px;
-  height:65px;
+  width: 90px;
+  height:90px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--neon-green);
