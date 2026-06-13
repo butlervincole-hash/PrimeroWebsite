@@ -546,43 +546,59 @@ span.accent {
    STEPS SECTION
 ============================ */
 .steps-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 40px;
-    background: #000;
-    border-top: 2px solid var(--neon-green);
-    border-bottom: 2px solid var(--neon-purple);
-    box-shadow: 0 0 20px var(--neon-green), 0 0 20px var(--neon-purple) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  background: #000;
+  border-top: 2px solid var(--neon-green);
+  border-bottom: 2px solid var(--neon-purple);
+  box-shadow: 0 0 20px var(--neon-green), 0 0 20px var(--neon-purple) inset;
 }
 
+/* Container for image + text */
 .steps-container {
-    display: flex;
-    align-items: right;
-    gap: 60px;
-    max-width: 1200px;
-    width: 100%;
+  display: flex;
+  align-items: center; /* Corrected from 'right' */
+  justify-content: center; /* Centers horizontally */
+  gap: 60px;
+  max-width: 1200px;
+  width: 100%;
 }
 
+/* Text block spacing */
 .steps-subtext {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 /* STEPS IMAGE — GLOW + TILT */
 .steps-section .steps-image img {
-    width: 275px;
-    height: auto;
-    filter: drop-shadow(0 0 6px var(--neon-green));
-    transition: transform 0.35s ease, filter 0.35s ease;
-    will-change: transform, filter;
+  width: 275px;
+  height: auto;
+  filter: drop-shadow(0 0 6px var(--neon-green));
+  transition: transform 0.35s ease, filter 0.35s ease;
+  will-change: transform, filter;
 }
 
 .steps-section .steps-image img:hover {
-    transform: scale(1.08) rotate(6deg);
-    filter:
-        drop-shadow(0 0 14px var(--neon-green))
-        drop-shadow(0 0 22px var(--neon-green))
-        drop-shadow(0 0 32px var(--neon-green));
+  transform: scale(1.08) rotate(6deg);
+  filter:
+    drop-shadow(0 0 14px var(--neon-green))
+    drop-shadow(0 0 22px var(--neon-green))
+    drop-shadow(0 0 32px var(--neon-green));
+}
+
+/* Responsive stacking for mobile */
+@media (max-width: 900px) {
+  .steps-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .steps-section .steps-image img {
+    width: 300px;
+  }
 }
 
 /* ============================
