@@ -795,7 +795,7 @@ span.accent {
 .testimonials-container {
     display: flex;
     justify-content: center;
-    align-items: center; /* Combined your duplicate rules into this clean one */
+    align-items: flex-end;
     gap: 80px;
     max-width: 1200px;
     margin: 0 auto;
@@ -807,15 +807,15 @@ span.accent {
     flex: 1;
     display: flex;
     flex-direction: column; 
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 45px; /* Reduced from 90px so your image layout fits cleanly on the screen */
+    gap: 65px;
 }
 
 /* Explicit class for your top image */
 .testimonial-img-top {
     width: 90%;
-    max-width: 320px; /* Snaps it tightly to 100px width */
+    max-width: 320px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
@@ -831,7 +831,7 @@ span.accent {
 /* Explicit class for your bottom image */
 .testimonial-img-bottom {
     width: 90%;
-    max-width: 320px; /* Reduced from 500px to keep it balanced and professional next to text */
+    max-width: 320px; 
     height: auto;
     border-radius: 10px;
     transform: rotate(-3deg);
