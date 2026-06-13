@@ -1035,9 +1035,6 @@ button:hover {
   justify-self: start;
 }
 
-background: linear-gradient(135deg, #000 0%, #0a0a0a 100%);
-animation: heroBGShift 10s ease-in-out infinite;
-
 /* ============================
    RESPONSIVE
 ============================ */
@@ -1085,6 +1082,11 @@ animation: heroBGShift 10s ease-in-out infinite;
   .footer-social {
     justify-content: center;
   }
+}
+
+body {
+  background: linear-gradient(135deg, #000 0%, #0a0a0a 100%);
+  animation: heroBGShift 10s ease-in-out infinite;
 }
 
 /* ============================
