@@ -795,52 +795,55 @@ span.accent {
 .testimonials-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center; /* Combined your duplicate rules into this clean one */
     gap: 80px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 0;
 }
 
-.testimonials-container {
-    align-items: center;
-}
-
 /* LEFT SIDE — stacked illustrations */
 .testimonial-image {
     flex: 1;
     display: flex;
-    flex-direction: column; /* stack vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    gap: 90px;/* space between images */
+    gap: 40px; /* Reduced from 90px so your image layout fits cleanly on the screen */
 }
 
-.testimonial-image img:first-child {
+/* Explicit class for your top image */
+.testimonial-img-top {
     width: 100%;
-    max-width: 100px;
+    max-width: 100px; /* Snaps it tightly to 100px width */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--neon-green);
     transition: transform 0.35s ease, filter 0.35s ease;
 }
 
-.testimonial-image img:last-child {
+.testimonial-img-top:hover {
+    transform: scale(1.08) rotate(6deg);
+    filter: drop-shadow(0 0 14px var(--neon-green));
+}
+
+/* Explicit class for your bottom image */
+.testimonial-img-bottom {
     width: 90%;
-    max-width:500px;
+    max-width: 320px; /* Reduced from 500px to keep it balanced and professional next to text */
     height: auto;
     border-radius: 10px;
     transform: rotate(-3deg);
     opacity: 0.95;
     box-shadow: 0 0 14px var(--neon-green);
+    transition: transform 0.35s ease, filter 0.35s ease;
 }
 
-.testimonial-image img:hover {
-    transform: scale(1.08) rotate(6deg);
-    filter:
+.testimonial-img-bottom:hover {
+    transform: scale(1.08) rotate(3deg);
+    filter: 
         drop-shadow(0 0 14px var(--neon-green))
-        drop-shadow(0 0 22px var(--neon-green))
-        drop-shadow(0 0 32px var(--neon-green));
+        drop-shadow(0 0 22px var(--neon-green));
 }
 
 /* RIGHT SIDE — text column */
@@ -869,35 +872,13 @@ span.accent {
     box-shadow: 0 0 18px var(--neon-purple), 0 0 28px var(--neon-green);
 }
 
-/* NEON DIVIDER */
-.neon-divider {
-    width: 85%;
-    height: 4px;
-    margin: 60px auto;
-    border-radius: 3px;
-    background: linear-gradient(90deg, var(--neon-green), var(--neon-purple), var(--neon-green));
-    background-size: 300% 100%;
-    animation: neonWave 4s linear infinite, neonPulse 2.5s ease-in-out infinite;
-    box-shadow: 0 0 12px var(--neon-green), 0 0 12px var(--neon-purple);
-}
-
-/* NEON PULSE ANIMATION */
-@keyframes neonPulse {
-    0%, 100% {
-        box-shadow: 0 0 8px var(--neon-green), 0 0 8px var(--neon-purple);
-    }
-    50% {
-        box-shadow: 0 0 20px var(--neon-green), 0 0 20px var(--neon-purple);
-    }
-}
-
 /* TESTIMONIAL CARD — photo + quote side by side */
 .testimonial-card {
     display: flex;
     align-items: center;
     gap: 25px;
     padding: 25px;
-    margin: 25px 0;
+    margin: 15px 0;
     border: 2px solid var(--neon-purple);
     border-radius: 12px;
     background: rgba(0, 0, 0, 0.4);
