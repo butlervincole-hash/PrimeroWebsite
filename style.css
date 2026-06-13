@@ -1166,6 +1166,16 @@ span.accent {
 /* ============================
    RESPONSIVE
 ============================ */
+
+@keyframes neonPulse {
+  0%, 100% { text-shadow: 0 0 8px var(--neon-green), 0 0 16px var(--neon-green); }
+  50% { text-shadow: 0 0 14px var(--neon-green), 0 0 28px var(--neon-green); }
+}
+
+.footer-brand {
+  animation: neonPulse 3s ease-in-out infinite;
+}
+
 @media (max-width: 900px) {
     .hero-section,
     .quality-container,
