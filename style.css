@@ -1010,19 +1010,41 @@ span.accent {
     margin: 0 auto 40px;
 }
 
+/* --- THE NEW 3-COLUMN DESKTOP GRID --- */
 .footer-bottom {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
     align-items: center;
-    gap: 20px;
-    max-width: 1200px;
+    max-width: 95%;
     margin: 0 auto;
-    padding: 10px 60px;
+    padding: 10px 40px;
 }
 
+/* Aligns the branding elements perfectly to the left column */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+.footer-bottom img {
+    width: 55px;
+    height: auto;
+}
+
+/* Locks the copyright statement dead-center on a single line */
+.footer-bottom p {
+    white-space: nowrap;
+    text-align: center;
+    margin: 0;
+}
+
+/* Aligns the social icons cleanly to the right column */
 .footer-social {
     display: flex;
     gap: 18px;
+    justify-content: flex-end;
 }
 
 .footer-social img {
@@ -1088,25 +1110,16 @@ span.accent {
         text-align: center;
     }
 
+    /* Stack everything into a neat single column on mobile devices */
     .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    max-width: 95%;
-    padding 10px 40px;
-    margin: 0 auto;
-}
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+    }
 
-.footer-bottom p {
-  white-space:nowrap;
-}
-
-.footer-bottom img {
-    width: 55px;
-    height: auto;
-}
-
+    .footer-logo, 
     .footer-social {
         justify-content: center;
     }
@@ -1146,12 +1159,8 @@ span.accent {
 
 /* HERO BACKGROUND SHIFT */
 @keyframes heroBGShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
 }
 
 /* DIVIDER ANIMATIONS */
@@ -1167,15 +1176,9 @@ span.accent {
 
 /* FOOTER ICON GLOW SHIFT */
 @keyframes neonGlowShift {
-    0% {
-        box-shadow: 0 0 6px var(--neon-green);
-    }
-    50% {
-        box-shadow: 0 0 14px var(--neon-purple);
-    }
-    100% {
-        box-shadow: 0 0 6px var(--neon-green);
-    }
+    0% { box-shadow: 0 0 6px var(--neon-green); }
+    50% { box-shadow: 0 0 14px var(--neon-purple); }
+    100% { box-shadow: 0 0 6px var(--neon-green); }
 }
 
 /* VALUES — Fix image size */
@@ -1188,4 +1191,3 @@ span.accent {
 .values-section .values-grid {
     margin-bottom: 28px;
 }
-
