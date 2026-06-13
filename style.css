@@ -795,40 +795,37 @@ span.accent {
 .testimonials-container {
     display: flex;
     justify-content: center;
-    align-items: stretch; /* Forces both columns to have the exact same height */
+    align-items: flex-end;
     gap: 80px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 0;
 }
 
-/* LEFT SIDE — converted to a strict 2-row grid system */
+/* LEFT SIDE — stacked illustrations */
 .testimonial-image {
     flex: 1;
-    display: grid;
-    grid-template-rows: 1fr 1fr; /* Slices the column into two equal halves */
-    align-items: center;         /* Centers elements within their respective halves */
-    justify-items: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
 }
 
 /* Explicit class for your top image */
 .testimonial-img-top {
-    width: 90%;          
-    max-width: 320px;    
+    width: 90%;
+    max-width: 320px; 
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 0 14px var(--neon-green); 
+    box-shadow: 0 0 14px var(--neon-green);
     transition: transform 0.35s ease, filter 0.35s ease;
-    align-self: end; /* Pins this image to the horizontal line separating the cards */
-    margin-bottom: 20px; /* Shifts it slightly upward to settle right next to Charlotte */
+    margin-top: 65px;
 }
 
 .testimonial-img-top:hover {
     transform: scale(1.08) rotate(3deg);
-    filter: 
-        drop-shadow(0 0 14px var(--neon-green))
-        drop-shadow(0 0 22px var(--neon-green));
-}
+    filter: drop-shadow(0 0 14px var(--neon-green));
+            drop-shadow(0 0 22px var(--neon-green));
+  }
 
 /* Explicit class for your bottom image */
 .testimonial-img-bottom {
@@ -840,12 +837,11 @@ span.accent {
     opacity: 0.95;
     box-shadow: 0 0 14px var(--neon-green);
     transition: transform 0.35s ease, filter 0.35s ease;
-    align-self: start; /* Pins this image right down to the lower grid half next to Jordan */
-    margin-top: 20px;
+    margin-top: 65px
 }
 
 .testimonial-img-bottom:hover {
-    transform: scale(1.08) rotate(-3deg);
+    transform: scale(1.08) rotate(3deg);
     filter: 
         drop-shadow(0 0 14px var(--neon-green))
         drop-shadow(0 0 22px var(--neon-green));
@@ -877,7 +873,7 @@ span.accent {
     box-shadow: 0 0 18px var(--neon-purple), 0 0 28px var(--neon-green);
 }
 
-/* TESTIMONIAL CARD */
+/* TESTIMONIAL CARD — photo + quote side by side */
 .testimonial-card {
     display: flex;
     align-items: center;
