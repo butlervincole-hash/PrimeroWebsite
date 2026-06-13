@@ -969,12 +969,6 @@ span.accent {
 /* ============================
    CTA FOOTER BANNER
 ============================ */
-/* ============================
-   CTA FOOTER BANNER
-============================ */
-/* ============================
-   CTA FOOTER BANNER
-============================ */
 .footer-banner {
     padding: 60px 20px;
     background: #000;
@@ -984,20 +978,22 @@ span.accent {
     box-shadow: 0 0 20px var(--neon-green), 0 0 20px var(--neon-purple) inset;
 }
 
-/* 1. Target the text paragraph cleanly to create vertical breathing room */
-.footer-banner p {
-    margin-bottom: 35px; /* Safely pushes the button row down */
-    font-size: 1.1rem;
-    color: #fff;
+/* 1. Spacing between the text and the buttons */
+.cta-section p,
+.footer-banner p, /* Added this just in case your container class is .footer-banner */
+div:has(> .cta-content) p {
+    margin-bottom: 30px;
 }
 
-/* 2. Target the button container to handle centering and inner spacing */
-.cta-buttons {
+/* 2. Spacing BETWEEN the two buttons */
+.cta-buttons-container,
+div:has(> .cta-buttons) {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* This adds that "tiny bit of space" perfectly between the two buttons */
+    gap: 20px; /* This cleanly handles the "tiny bit of space" perfectly and keeps them centered */
 }
+
 
 /* ============================
    FOOTER
