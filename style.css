@@ -572,14 +572,15 @@ span.accent {
   margin-bottom: 28px;
 }
 
-/* STEPS IMAGE — GLOW + TILT */
-.steps-section .steps-image img {
-  width: 450px;
+/* STEPS IMAGE — GLOW + TILT */.steps-section .steps-image img {
+  .steps-section .steps-image img {
+  width: 750px;
   height: auto;
   filter: drop-shadow(0 0 6px var(--neon-green));
   transition: transform 0.35s ease, filter 0.35s ease;
   will-change: transform, filter;
 }
+
 
 .steps-section .steps-image img:hover {
   transform: scale(1.08) rotate(6deg);
