@@ -1,316 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Still Weird Magnolias</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Still Weird Magnolias</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER & NAVIGATION -->
-    <header>
-        <nav class="nav">
-            <div class="nav-left">
-                <img src="Assets/MagLogo.png" alt="Still Weird Magnolias Logo" class="small-logo">
-                <h3 class="nav-title">Still Weird Magnolias</h3>
-            </div>
+<!-- HEADER -->
+<header>
+  <nav class="nav">
+    <div class="nav-left">
+      <img src="Assets/MagLogo.png" alt="Still Weird Magnolias Logo" class="small-logo">
+      <h3 class="nav-title">Still Weird Magnolias</h3>
+    </div>
 
-            <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
-                <span></span><span></span><span></span>
-            </button>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
 
-            <ul class="nav-menu">
-                <li><a href="#hero-section">Home</a></li>
-                <li><a href="#features-section">Features</a></li>
-                <li><a href="#pricing-section">Pricing</a></li>
-                <li><a href="#testimonials-section">Testimonials</a></li>
-                <li><a href="#faq-section">FAQ</a></li>
-                <li><a href="#cta-section">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <ul class="nav-menu">
+      <li><a href="#hero-section">Home</a></li>
+      <li><a href="#features-section">Features</a></li>
+      <li><a href="#pricing-section">Pricing</a></li>
+      <li><a href="#testimonials-section">Testimonials</a></li>
+      <li><a href="#faq-section">FAQ</a></li>
+      <li><a href="#cta-section">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <main>
+<main>
 
-        <!-- HERO SECTION -->
-        <section id="hero-section" class="hero-section">
-            <div class="hero-col hero-left">
-                <img src="Assets/MagLogo.png" class="hero-logo" alt="MagLogo">
-            </div>
+<!-- HERO -->
+<section id="hero-section" class="hero-section">
+  <div class="hero-col hero-left">
+    <img src="Assets/MagLogo.png" class="hero-logo" alt="MagLogo">
+  </div>
 
-            <div class="hero-col hero-center">
-                <h1>Beautiful React Templates <span class="accent">for you.</span></h1>
-                <p>Our templates are easy to set up, understand, and customize. Fully modular components with a variety of pages and features.</p>
+  <div class="hero-col hero-center">
+    <h1>Beautiful React Templates <span class="accent">for you.</span></h1>
+    <p>Our templates are easy to set up, understand, and customize. Fully modular components with a variety of pages and features.</p>
 
-                <div class="hero-input-row">
-                    <input type="email" placeholder="Enter your email" class="email-input">
-                    <button class="get-started-btn">Get Started</button>
-                </div>
-            </div>
+    <div class="hero-input-row">
+      <input type="email" placeholder="Enter your email" class="email-input">
+      <button class="get-started-btn">Get Started</button>
+    </div>
+  </div>
 
-            <div class="hero-col hero-right">
-                <img src="Assets/winterdesigner.png" class="hero-side-image" alt="Desk Lady">
-            </div>
-        </section>
+  <div class="hero-col hero-right">
+    <img src="Assets/winterdesigner.png" class="hero-side-image" alt="Desk Lady">
+  </div>
+</section>
 
-        <!-- CUSTOMERS SECTION -->
-        <section id="customers-section" class="section customers-section">
-            <h2 class="section-title">Our Trusted <span>Customers</span></h2>
+<!-- CUSTOMERS -->
+<section id="customers-section" class="section customers-section">
+  <h2 class="section-title">Our Trusted <span>Customers</span></h2>
 
-            <div class="customer-logos">
-                <img src="Assets/tcplogoneon.png" alt="TCP Logo" class="customer-logo">
-                <img src="Assets/logobbq1.png" alt="BBQ logo" class="customer-logo">
-                <img src="Assets/lastcallchurch.png" alt="Last Call Church Logo" class="customer-logo">
-            </div>
-        </section>
+  <div class="customer-logos">
+    <img src="Assets/tcplogoneon.png" alt="TCP Logo" class="customer-logo">
+    <img src="Assets/logobbq1.png" alt="BBQ logo" class="customer-logo">
+    <img src="Assets/lastcallchurch.png" alt="Last Call Church Logo" class="customer-logo">
+  </div>
+</section>
 
-        <!-- FEATURES SECTION -->
-        <section id="features-section" class="section">
-            <h3 class="features-label">Features</h3>
-            <h2 class="services-title">We Have Amazing <span>Services</span></h2>
-            <p class="services-subtext">Unique, timely, efficient, & user-friendly.</p>
+<!-- FEATURES -->
+<section id="features-section" class="section">
+  <h3 class="features-label">Features</h3>
+  <h2 class="services-title">We Have Amazing <span>Services</span></h2>
+  <p class="services-subtext">Unique, timely, efficient, & user-friendly.</p>
 
-            <div class="features-wrapper">
-                <div class="neon-icons">
+  <div class="neon-icons">
+    <div class="icon-box">
+      <img src="Assets/Secure.png" alt="Secure Icon" />
+      <h4>Secure</h4>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
 
-                    <div class="icon-box">
-                        <img src="Assets/Secure.png" alt="Secure Icon" />
-                        <h4>Secure</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
+    <div class="icon-box">
+      <img src="Assets/sliders.png" alt="Custom Icon" />
+      <h4>Customizable</h4>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
 
-                    <div class="icon-box">
-                        <img src="Assets/sliders.png" alt="Custom Icon" />
-                        <h4>Customizable</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
+    <div class="icon-box">
+      <img src="Assets/bolt.png" alt="Fast Icon" />
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
 
-                    <div class="icon-box">
-                        <img src="Assets/bolt.png" alt="Fast Icon" />
-                        <h4>Fast</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
+    <div class="icon-box">
+      <img src="Assets/Reliable.png" alt="Reliable Icon" />
+      <h4>Reliable</h4>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
 
-                    <div class="icon-box">
-                        <img src="Assets/Reliable.png" alt="Reliable Icon" />
-                        <h4>Reliable</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
+    <div class="icon-box">
+      <img src="Assets/24seven.png" alt="Support Icon" />
+      <h4>24/7 Support</h4>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
 
-                    <div class="icon-box">
-                        <img src="Assets/24seven.png" alt="Support Icon" />
-                        <h4>24/7 Support</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
+    <div class="icon-box">
+      <img src="Assets/checkmark.png" alt="Easy Icon" />
+      <h4>Easy</h4>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+  </div>
+</section>
 
-                    <div class="icon-box">
-                        <img src="Assets/checkmark.png" alt="Easy Icon" />
-                        <h4>Easy</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>
+<!-- QUALITY -->
+<section id="quality-section" class="quality-section">
+  <div class="quality-container">
+    <div class="quality-text">
+      <p class="quality-label">QUALITY WORK</p>
+      <h2>Designed & Developed by <span>Professionals</span></h2>
+      <p class="quality-subtext">Our professionals come from a world immersed in design as keen developers who are passionate in making your ideas have a pulse.</p>
+      <a href="#" class="learn-more-btn">Learn More</a>
+    </div>
 
-                </div>
-            </div>
-        </section>
+    <div class="quality-image">
+      <img src="Assets/prouddesigner.svg" alt="Quality Work Image">
+    </div>
+  </div>
+</section>
 
-        <!-- QUALITY SECTION -->
-        <section id="quality-section" class="quality-section">
-            <div class="quality-container">
+<!-- STEPS -->
+<section id="steps-section" class="steps-section">
+  <div class="steps-container">
+    <div class="steps-image">
+      <img src="Assets/join.png" alt="Steps Illustration">
+    </div>
 
-                <div class="quality-text">
-                    <p class="quality-label">QUALITY WORK</p>
-                    <h2>Designed & Developed by <span>Professionals</span></h2>
+    <div class="steps-text">
+      <p class="steps-label">STEPS</p>
+      <h2>Easy to Get <span>Started</span></h2>
 
-                    <p class="quality-subtext">
-                        Our professionals come from a world immersed in design as keen developers who are passionate
-                        in making your ideas have a pulse.
-                    </p>
+      <div class="step-item">
+        <h3><span class="step-number">01</span> Register</h3>
+        <p>Create an account with us using Google or Facebook.</p>
+      </div>
 
-                    <a href="#" class="learn-more-btn">Learn More</a>
-                </div>
+      <div class="step-item">
+        <h3><span class="step-number">02</span> Download</h3>
+        <p>Browse and download the template that you like from the marketplace.</p>
+      </div>
 
-                <div class="quality-image">
-                    <img src="Assets/prouddesigner.svg" alt="Quality Work Image">
-                </div>
+      <div class="step-item">
+        <h3><span class="step-number">03</span> Run</h3>
+        <p>Follow the instructions to set up and customize the template to your needs.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            </div>
-        </section>
+<!-- VALUES -->
+<section id="values-section" class="values-section">
+  <div class="values-container">
+    <div class="values-text">
+      <p class="values-label">VALUES</p>
+      <h2>We Always Abide by Our <span>Principles</span></h2>
+      <p class="values-subtext">Tasteful Class & Seamless User Experiences.</p>
 
-        <!-- STEPS SECTION -->
-        <section id="steps-section" class="steps-section">
-            <div class="steps-container">
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon green">$</div>
+          <h4>Affordable</h4>
+          <p>We promise to offer you the best rate we can – at par with the industry standard.</p>
+        </div>
 
-                <div class="steps-image">
-                    <img src="Assets/join.png" alt="Steps Illustration">
-                </div>
+        <div class="value-card">
+          <div class="value-icon purple">💼</div>
+          <h4>Professionalism</h4>
+          <p>We assure you that our templates are designed and created by professional designers.</p>
+        </div>
+      </div>
 
-                <div class="steps-text">
-                    <p class="steps-label">STEPS</p>
-                    <h2>Easy to Get <span>Started</span></h2>
+      <a href="#" class="learn-more-btn">Learn More</a>
+    </div>
 
-                    <div class="step-item">
-                        <h3><span class="step-number">01</span> Register</h3>
-                        <p>Create an account with us using Google or Facebook.</p>
-                    </div>
+    <div class="values-image">
+      <img src="Assets/valuesNprinciples.png" alt="Values and Principles Illustration">
+    </div>
+  </div>
+</section>
 
-                    <div class="step-item">
-                        <h3><span class="step-number">02</span> Download</h3>
-                        <p>Browse and download the template that you like from the marketplace.</p>
-                    </div>
+<!-- PRICING -->
+<section id="pricing-section" class="pricing-section">
+  <p class="pricing-label">PRICING</p>
+  <h2>Reasonable & Flexible <span>Plans</span></h2>
+  <p class="pricing-subtext">Pricing accessible to individuals & businesses of all sizes.</p>
 
-                    <div class="step-item">
-                        <h3><span class="step-number">03</span> Run</h3>
-                        <p>Follow the instructions to set up and customize the template to your needs.</p>
-                    </div>
+  <div class="pricing-grid">
 
-                </div>
-            </div>
-        </section>
+    <div class="pricing-card personal">
+      <h3>PERSONAL</h3>
+      <h1>$17.99</h1>
+      <p class="monthly">MONTHLY</p>
+      <h4>For All Individuals</h4>
+      <ul>
+        <li>30 Templates</li>
+        <li>7 Landing Pages</li>
+        <li>12 Internal Pages</li>
+        <li>Basic Assistance</li>
+        <li>4 Logos</li>
+      </ul>
+      <a href="#" class="buy-btn green-btn">BUY NOW</a>
+    </div>
 
-        <!-- VALUES SECTION -->
-        <section id="values-section" class="values-section">
-            <div class="values-container">
+    <div class="pricing-card business">
+      <h3>BUSINESS</h3>
+      <h1>$37.99</h1>
+      <p class="monthly">MONTHLY</p>
+      <h4>For Small Businesses</h4>
+      <ul>
+        <li>60 Templates</li>
+        <li>15 Landing Pages</li>
+        <li>22 Internal Pages</li>
+        <li>Priority Assistance</li>
+      </ul>
+      <a href="#" class="buy-btn purple-btn">BUY NOW</a>
+    </div>
 
-                <div class="values-text">
-                    <p class="values-label">VALUES</p>
-                    <h2>We Always Abide by Our <span>Principles</span></h2>
+    <div class="pricing-card enterprise">
+      <h3>ENTERPRISE</h3>
+      <h1>$57.99</h1>
+      <p class="monthly">MONTHLY</p>
+      <h4>For Large Companies</h4>
+      <ul>
+        <li>90 Templates</li>
+        <li>27 Landing Pages</li>
+        <li>37 Internal Pages</li>
+        <li>Personal Assistance</li>
+      </ul>
+      <a href="#" class="buy-btn red-btn">BUY NOW</a>
+    </div>
 
-                    <p class="values-subtext">Tasteful Class & Seamless User Experiences.</p>
+  </div>
+</section>
 
-                    <div class="values-grid">
-
-                        <div class="value-card">
-                            <div class="value-icon green">$</div>
-                            <h4>Affordable</h4>
-                            <p>We promise to offer you the best rate we can – at par with the industry standard.</p>
-                        </div>
-
-                        <div class="value-card">
-                            <div class="value-icon purple">💼</div>
-                            <h4>Professionalism</h4>
-                            <p>We assure you that our templates are designed and created by professional designers.</p>
-                        </div>
-
-                    </div>
-
-                    <a href="#" class="learn-more-btn">Learn More</a>
-                </div>
-
-                <div class="values-image">
-                    <img src="Assets/valuesNprinciples.png" alt="Values and Principles Illustration">
-                </div>
-
-            </div>
-        </section>
-
-        <!-- PRICING SECTION -->
-        <section id="pricing-section" class="pricing-section">
-            <p class="pricing-label">PRICING</p>
-            <h2>Reasonable & Flexible <span>Plans</span></h2>
-
-            <p class="pricing-subtext">Pricing accessible to individuals & businesses of all sizes.</p>
-
-            <div class="pricing-grid">
-
-                <div class="pricing-card personal">
-                    <h3>PERSONAL</h3>
-                    <h1>$17.99</h1>
-                    <p class="monthly">MONTHLY</p>
-                    <h4>For All Individuals</h4>
-
-                    <ul>
-                        <li>30 Templates</li>
-                        <li>7 Landing Pages</li>
-                        <li>12 Internal Pages</li>
-                        <li>Basic Assistance</li>
-                        <li>4 Logos</li>
-                    </ul>
-
-                    <a href="#" class="buy-btn green-btn">BUY NOW</a>
-                </div>
-
-                <div class="pricing-card business">
-                    <h3>BUSINESS</h3>
-                    <h1>$37.99</h1>
-                    <p class="monthly">MONTHLY</p>
-                    <h4>For Small Businesses</h4>
-
-                    <ul>
-                        <li>60 Templates</li>
-                        <li>15 Landing Pages</li>
-                        <li>22 Internal Pages</li>
-                        <li>Priority Assistance</li>
-                    </ul>
-
-                    <a href="#" class="buy-btn purple-btn">BUY NOW</a>
-                </div>
-
-                <div class="pricing-card enterprise">
-                    <h3>ENTERPRISE</h3>
-                    <h1>$57.99</h1>
-                    <p class="monthly">MONTHLY</p>
-                    <h4>For Large Companies</h4>
-
-                    <ul>
-                        <li>90 Templates</li>
-                        <li>27 Landing Pages</li>
-                        <li>37 Internal Pages</li>
-                        <li>Personal Assistance</li>
-                    </ul>
-
-                    <a href="#" class="buy-btn red-btn">BUY NOW</a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Neon divider ABOVE testimonials (below pricing) -->
 <div class="neon-divider"></div>
 
-<!-- TESTIMONIALS SECTION -->
+<!-- TESTIMONIALS -->
 <section id="testimonials-section" class="testimonials-section">
   <div class="testimonials-container">
 
-    <!-- LEFT IMAGES -->
-   <div class="testimonial-image">
-  <img src="Assets/clientsloveus.png" alt="Clients Love Us" class="testimonial-img-top">
-  <img src="Assets/stock1.png" alt="Creative Work" class="testimonial-img-bottom">
-</div>
+    <div class="testimonial-image">
+      <img src="Assets/clientsloveus.png" alt="Clients Love Us" class="testimonial-img-top">
+      <img src="Assets/stock1.png" alt="Creative Work" class="testimonial-img-bottom">
+    </div>
 
-    <!-- RIGHT TEXT -->
     <div class="testimonial-text">
       <p class="testimonial-label">TESTIMONIALS</p>
       <h2>Clients Love <span>Us</span></h2>
 
-      <!-- CARD 1 -->
       <div class="testimonial-card">
         <img src="Assets/CharlotteH.png" class="author-img" alt="Charlotte Hale">
         <div class="testimonial-content">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-subtext">
-            "Still Weird Magnolias made the process incredibly exciting, smooth, and enjoyable start to finish."
-          </p>
+          <p class="testimonial-subtext">"Still Weird Magnolias made the process incredibly exciting, smooth, and enjoyable start to finish."</p>
           <span class="neon-name">- Charlotte Hale</span>
           <p>Director, Delos Inc.</p>
         </div>
       </div>
 
-      <!-- CARD 2 -->
       <div class="testimonial-card">
         <img src="Assets/JordanM.png" class="author-img" alt="Jordan Miles">
         <div class="testimonial-content">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-subtext">
-            "The team at Still Weird Magnolias provided exceptional support throughout the project. Their attention to detail and commitment to quality exceeded our expectations."
-          </p>
+          <p class="testimonial-subtext">"The team at Still Weird Magnolias provided exceptional support throughout the project. Their attention to detail and commitment to quality exceeded our expectations."</p>
           <span class="neon-name">- Jordan Miles</span>
           <p>Founder, NeonWorks LLC</p>
         </div>
@@ -320,119 +286,116 @@
   </div>
 </section>
 
-<!-- Neon divider BELOW testimonials (above FAQ) -->
 <div class="neon-divider"></div>
 
-        <!-- FAQ SECTION -->
-        <section id="faq-section" class="section">
-            <h2>FAQ</h2>
+<!-- FAQ -->
+<section id="faq-section" class="section">
+  <h2>FAQ</h2>
 
-            <div class="faq">
-                <div class="faq-item">
-                    <button class="faq-question">Can I use these templates commercially?</button>
-                    <p class="faq-answer">Yes, you can.</p>
-                </div>
+  <div class="faq">
+    <div class="faq-item">
+      <button class="faq-question">Can I use these templates commercially?</button>
+      <p class="faq-answer">Yes, you can.</p>
+    </div>
 
-                <div class="faq-item">
-                    <button class="faq-question">Do I need to know React?</button>
-                    <p class="faq-answer">No, not required.</p>
-                </div>
-            </div>
-        </section>
+    <div class="faq-item">
+      <button class="faq-question">Do I need to know React?</button>
+      <p class="faq-answer">No, not required.</p>
+    </div>
+  </div>
+</section>
 
-       <!-- ============================
-     CTA FOOTER SECTION
-============================= -->
+<!-- CTA FOOTER -->
 <section class="footer-banner">
   <p>Developers all over the world are happily using Still Weird Magnolias.</p>
+
   <div class="cta-buttons-container">
     <button class="btn">GET STARTED</button>
     <button class="btn">CONTACT US</button>
   </div>
 </section>
 
-    <!-- FOOTER -->
-    <footer class="footer-main">
+<!-- FOOTER -->
+<footer class="footer-main">
 
-        <div class="footer-columns">
+  <div class="footer-columns">
 
-            <div class="footer-col">
-                <h4>MAIN</h4>
-                <ul>
-                    <li><a href="#features-section">Features</a></li>
-                    <li><a href="#faq-section">FAQs</a></li>
-                    <li><a href="#cta-section">Support</a></li>
-                    <li><a href="#hero-section">About Us</a></li>
-                </ul>
-            </div>
+    <div class="footer-col">
+      <h4>MAIN</h4>
+      <ul>
+        <li><a href="#features-section">Features</a></li>
+        <li><a href="#faq-section">FAQs</a></li>
+        <li><a href="#cta-section">Support</a></li>
+        <li><a href="#hero-section">About Us</a></li>
+      </ul>
+    </div>
 
-            <div class="footer-col">
-                <h4>PRODUCT</h4>
-                <ul>
-                    <li><a href="#hero-section">Log In</a></li>
-                    <li><a href="#pricing-section">Personal</a></li>
-                    <li><a href="#pricing-section">Business</a></li>
-                    <li><a href="#pricing-section">Team</a></li>
-                </ul>
-            </div>
+    <div class="footer-col">
+      <h4>PRODUCT</h4>
+      <ul>
+        <li><a href="#hero-section">Log In</a></li>
+        <li><a href="#pricing-section">Personal</a></li>
+        <li><a href="#pricing-section">Business</a></li>
+        <li><a href="#pricing-section">Team</a></li>
+      </ul>
+    </div>
 
-            <div class="footer-col">
-                <h4>PRESS</h4>
-                <ul>
-                    <li><a href="#hero-section">Logos</a></li>
-                    <li><a href="#hero-section">Events</a></li>
-                    <li><a href="#hero-section">Stories</a></li>
-                    <li><a href="#hero-section">Office</a></li>
-                </ul>
-            </div>
+    <div class="footer-col">
+      <h4>PRESS</h4>
+      <ul>
+        <li><a href="#hero-section">Logos</a></li>
+        <li><a href="#hero-section">Events</a></li>
+        <li><a href="#hero-section">Stories</a></li>
+        <li><a href="#hero-section">Office</a></li>
+      </ul>
+    </div>
 
-            <div class="footer-col">
-                <h4>TEAM</h4>
-                <ul>
-                    <li><a href="#hero-section">Career</a></li>
-                    <li><a href="#hero-section">Founders</a></li>
-                    <li><a href="#hero-section">Culture</a></li>
-                    <li><a href="#hero-section">Onboarding</a></li>
-                </ul>
-            </div>
+    <div class="footer-col">
+      <h4>TEAM</h4>
+      <ul>
+        <li><a href="#hero-section">Career</a></li>
+        <li><a href="#hero-section">Founders</a></li>
+        <li><a href="#hero-section">Culture</a></li>
+        <li><a href="#hero-section">Onboarding</a></li>
+      </ul>
+    </div>
 
-            <div class="footer-col">
-                <h4>LEGAL</h4>
-                <ul>
-                    <li><a href="#hero-section">GDPR</a></li>
-                    <li><a href="#hero-section">Privacy Policy</a></li>
-                    <li><a href="#hero-section">Terms of Service</a></li>
-                    <li><a href="#hero-section">Disclaimer</a></li>
-                </ul>
-            </div>
+    <div class="footer-col">
+      <h4>LEGAL</h4>
+      <ul>
+        <li><a href="#hero-section">GDPR</a></li>
+        <li><a href="#hero-section">Privacy Policy</a></li>
+        <li><a href="#hero-section">Terms of Service</a></li>
+        <li><a href="#hero-section">Disclaimer</a></li>
+      </ul>
+    </div>
 
-        </div>
+  </div>
 
-<div class="footer-logo">
-    <img src="Assets/MagLogo.png" alt="Logo" class="small-logo" />
-    <span class="footer-brand">Still Weird Magnolias</span>
-</div>
+  <div class="footer-bottom">
+    <div class="footer-logo">
+      <img src="Assets/MagLogo.png" alt="Logo" class="small-logo" />
+      <span class="footer-brand">Still Weird Magnolias</span>
+    </div>
 
     <p>© 2026 Still Weird Magnolias. All Rights Reserved.</p>
 
     <div class="footer-social">
-        <img src="Assets/FBlogo.webp" alt="Facebook">
-        <img src="Assets/twitterlogo.webp" alt="Twitter">
-        <img src="Assets/youtubelogo.png" alt="YouTube">
-        <img src="Assets/instalogo.png" alt="Instagram">
+      <img src="Assets/FBlogo.webp" alt="Facebook">
+      <img src="Assets/twitterlogo.webp" alt="Twitter">
+      <img src="Assets/youtubelogo.png" alt="YouTube">
+      <img src="Assets/instalogo.png" alt="Instagram">
     </div>
+  </div>
 
-</div>
+</footer>
 
-    </footer>
-
-    <!-- SCRIPT -->
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-            document.querySelector('.hamburger').classList.toggle('open');
-        }
-    </script>
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+    document.querySelector('.hamburger').classList.toggle('open');
+  }
+</script>
 
 </body>
 </html>
