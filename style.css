@@ -601,7 +601,8 @@ header {
   filter:
     drop-shadow(0 0 14px var(--neon-green))
     drop-shadow(0 0 22px var(--neon-purple))
-    drop-shadow(0 0 32px
+    drop-shadow(0 0 32px var(--neon-purple));
+}
 
 /* ============================
    PRICING SECTION
@@ -1088,6 +1089,7 @@ body {
   background: linear-gradient(135deg, #000 0%, #0a0a0a 100%);
   animation: heroBGShift 10s ease-in-out infinite;
 }
+
 
 /* ============================
    ANIMATIONS
