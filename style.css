@@ -1250,3 +1250,78 @@ h2 {
   animation: softFlicker 3s ease-in-out infinite;
 }
 
+@keyframes logoFlicker {
+  0%, 100% { opacity: 1; }
+  45% { opacity: 0.85; }
+  50% { opacity: 0.6; }
+  55% { opacity: 0.9; }
+}
+
+.customer-logos img:hover {
+  animation: logoFlicker 0.4s linear;
+}
+
+.customer-logos img:hover {
+  filter:
+    drop-shadow(0 0 12px var(--neon-green))
+    drop-shadow(0 0 18px var(--neon-purple));
+}
+
+.section-title {
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--neon-purple);
+  box-shadow: 0 0 10px var(--neon-purple);
+  animation: sweep 2s ease forwards;
+}
+
+@keyframes sweep {
+  from { width: 0%; }
+  to { width: 100%; }
+}
+
+@keyframes floatDrift {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+.customer-logos img {
+  animation: floatDrift 6s ease-in-out infinite;
+}
+
+.neon-divider {
+  animation:
+    neonWave 6s linear infinite,
+    neonPulse 3s ease-in-out infinite,
+    glowShift 8s linear infinite;
+}
+
+.customer-logos {
+  position: relative;
+}
+
+.customer-logos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle,
+    rgba(57,255,20,0.12),
+    rgba(0,0,0,0)
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+
+
