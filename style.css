@@ -792,23 +792,22 @@ span.accent {
 /* ============================
    TESTIMONIALS SECTION
 ============================ */
+/* THE CONTAINER CHANGE: Convert the whole section into a unified Grid layout */
 .testimonials-container {
-    display: flex;
-    justify-content: center;
-    align-items: normal;
-    gap: 80px;
+    display: grid;
+    /* Split into two columns: Left (Images) and Right (Text Content) */
+    grid-template-columns: 1fr 1fr; 
+    gap: 0 80px; /* 0px top/bottom gap, 80px side-to-side gap */
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 0;
 }
 
-/* LEFT SIDE — converted to a strict 2-row grid system */
+/* LEFT SIDE — This container now just holds the grid layout rules */
 .testimonial-image {
-    flex: 1;
     display: grid;
-    grid-template-rows: 1fr 1fr; /* Slices the column into two equal halves */
+    grid-template-rows: auto auto; /* Form two rows matching the heights of the text items */
     justify-items: center;
-    row-gap: 50px;
 }
 
 /* Explicit class for your top image */
@@ -819,8 +818,10 @@ span.accent {
     border-radius: 10px;
     box-shadow: 0 0 14px var(--neon-green); 
     transition: transform 0.35s ease, filter 0.35s ease;
-    align-self: end; /* Pins this image to the horizontal line separating the cards */
-    margin-bottom: 5px; /* Shifts it slightly upward to settle right next to Charlotte */
+    
+    /* Pushes it right down to sit aligned with the bottom of Charlotte's card */
+    align-self: end; 
+    margin-bottom: 25px; 
 }
 
 .testimonial-img-top:hover {
@@ -840,10 +841,10 @@ span.accent {
     opacity: 0.95;
     box-shadow: 0 0 14px var(--neon-green);
     transition: transform 0.35s ease, filter 0.35s ease;
-    align-self: start; /* Pins this image right down to the lower grid half next to Jordan */
-    grid-row: 2;
-    align-self: start;
-    margin-top: 5px;
+    
+    /* Pulls it down to sit perfectly aligned with the bottom of Jordan's card */
+    align-self: end; 
+    margin-bottom: 25px; 
 }
 
 .testimonial-img-bottom:hover {
@@ -853,12 +854,10 @@ span.accent {
         drop-shadow(0 0 22px var(--neon-green));
 }
 
-/* RIGHT SIDE — text column */
+/* RIGHT SIDE — Keeps original text layout formatting */
 .testimonial-text {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     text-align: left;
 }
 
