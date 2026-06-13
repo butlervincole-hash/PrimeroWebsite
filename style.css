@@ -1089,10 +1089,19 @@ span.accent {
     }
 
     .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px 20px;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 60px;
+}
+
+.footer-bottom img {
+    width: 55px;
+    height: auto;
+}
 
     .footer-social {
         justify-content: center;
